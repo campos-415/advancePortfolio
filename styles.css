@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:  0;
+  font-size: 'Roboto', 'sans-serif';
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  background-color: rgb(245, 245, 245);
+}
+
+
+/* 
+
+LANDING PAGE
+
+*/
+
+#landing-page {
+  min-height: 100vh;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1000px;
+}
+
+.title {
+  font-size: 120px;
+  margin-bottom: 12px;
+  text-align: left;
+  line-height: 1;
+}
+
+.title--secondary,
+.orange {
+  color: #f06449;
+}
+
+/* 
+
+NAVEGATION
+
+*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+#personal-logo {
+  width: 50px;
+  height: 50px;
+  filter: invert();
+}
+
+.nav__link--list {
+  display: flex;
+}
+
+.nav__link {
+  margin: 0 12px;
+}
+
+.nav__link--anchor {
+  text-decoration: none;
+  font-size: 16px;
+  color:  #242424;
+  font-weight: 700;
+}
+
+.fa-adjust {
+  font-size: 20px;
+}
