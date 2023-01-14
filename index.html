@@ -7,7 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cesar Campos</title>
   <link rel="stylesheet" href="./styles.css" />
+  <script src="/index.js" defer></script>
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("XLo66Pj42bzrGVQqR");
+    })();
+  </script>
 </head>
 
 <body>
@@ -25,10 +33,11 @@
           <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">projects</a>
         </li>
         <li class="nav__link">
-          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
+          <a onclick="toggleModal()" href="#"
+            class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
         </li>
 
-        <li class="nav__link click">
+        <li class="nav__link click" onclick="toggleContrast()">
           <a href="#" class="nav__link--anchor nav__hover-effect link__hover-effect-black"><i
               class="fas fa-adjust"></i></a>
         </li>
@@ -40,12 +49,11 @@
         <h1 class="title orange">I'm Cesar</h1>
         <p class="header__para">
           I am a <b class="orange">Frontend Software Engineer.</b> I have a
-          strong foundation in HTML, CSS, JavaScript. I am passionate about
-          building intuitive and visually appealing user interfaces, and I am
+          strong foundation in <b class="orange">HTML, CSS, JavaScript </b> & <b class="orange">React.</b> I am
           skilled at implementing responsive design principles to ensure that
           my projects look great on all devices
           <br />
-          Here's a bit <b class="orange">about me</b>
+          Here's a bit <b class="orange click" onclick="toggleModal()">about me</b>
         </p>
         <div class="social__list">
           <a href="" class="social__link click" target="_blank">
@@ -60,7 +68,7 @@
         </div>
       </div>
     </header>
-    <button class="mail__btn click">
+    <button class="mail__btn click" onclick="toggleModal()">
       <i class="fas fa-envelope"></i>
     </button>
     <a href="" class="scroll" id="projects">
@@ -73,23 +81,59 @@
         <p class="modal__para">
           I am a 24 years old Salvadorean <b class="orange">Frontend Software Engineer</b>
           <br>
-          I have a strong foundation in <b class="orange"> HTML, CSS, JavaScript </b>. I am passionate about building intuitive and visually
-          appealing user interfaces, and I am skilled at implementing responsive design principles to ensure that my
-          projects look great on all devices
+          I have experience in designing and developing responsive websites, web applications with these languages <b class="orange">HTML5, CSS,
+            JavaScript</b>, and experience
+          with web development frameworks such as <b class="orange">React</b>. I am passionate about technology and
+          coding, always eager to learn new skills and stay up-to-date with the latest web development trends. My goal
+          is to create
+          beautiful and functional websites that provide a great user experience. Let's work together and bring your
+          ideas to life!
         </p>
         <div class="modal__languages">
           <figure class="modal__language">
             <img src="./assets/HTML5.png" class="modal__language--img" alt="">
+            <span class="language__name">HTML5</span>
           </figure>
           <figure class="modal__language">
             <img src="./assets/css.png" class="modal__language--img" alt="">
+            <span class="language__name">CSS</span>
           </figure>
           <figure class="modal__language">
             <img src="./assets/javascript.png" class="modal__language--img" alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img src="./assets/React.png" class="modal__language--img" alt="">
+            <span class="language__name">React</span>
           </figure>
         </div>
       </div>
-      <div class="modal__half modal__contact">Let's have achat</div>
+      <div class="modal__half modal__contact">
+        <h3 class="modal__title modal__title--contact">
+          Let's Have a Chat!
+        </h3>
+        <h4 class="modal__sub-title modal__sub-title--contact">
+          I'm currently open for new Opportunities
+        </h4>
+        <form onsubmit="contact(event)" id="contact__form">
+          <div class="form__item">
+            <labbel class="form__item--label">Name</labbel>
+            <input type="text" class="input" name="user_name"></input>
+            <labbel class="form__item--label">Email</labbel>
+            <input type="email" class="input" name="user_email"></input>
+            <labbel class="form__item--label">Message</labbel>
+            <textarea type="text" class="input" name="message"></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit click">Send it my way!</button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! <br>Looking foward to spkeaking to you soon
+        </div>
+        <i class="fas fa-times modal__exit click" onclick="closeModal()"></i>
+      </div>
     </div>
   </section>
   <section id="projects">
@@ -170,8 +214,8 @@
             class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">Github</a>
           <a href="www.linkedin.com/in/campos415"
             class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">LinkedIn</a>
-          <a href="" class="footer__social--link link__hover-effect link__hover-effect--white"
-            target="_blank">Contact</a>
+          <a href="#landing-page" class="footer__social--link link__hover-effect link__hover-effect--white"
+            onclick="toggleModal()">Contact</a>
           <a href="./assets/cesar-campos-resume.pdf"
             class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">Resume</a>
         </div>
