@@ -765,7 +765,7 @@ SHAPES
 
 /* SMALL PHONES */ 
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
   .title {
     font-size: 52px;
   }
@@ -795,5 +795,14 @@ SHAPES
 
   .modal__half {
     padding: 40px;
+  }
+
+  .logo__text {
+    font-size: 24px;
+  }
+
+  .logo__wrapper {
+    width: 125px;
+    margin: -40px -50px;
   }
 }
