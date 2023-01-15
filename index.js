@@ -1,6 +1,7 @@
 //template_nltfluk
 //service_litwiq6
 //XLo66Pj42bzrGVQqR
+const scaleFactor = 1 / 20
 let isModalOpen = false
 let contrastToggle = false 
 function toggleContrast() {
@@ -23,7 +24,24 @@ function toggleModal() {
   document.body.classList += ' modal--open'
 }
 
+function closeModal() {
+  const exitModal = document.querySelector('body')
+  exitModal.classList.remove('modal--open')
+}
 
+
+function moveBackground(event) {
+  const shapes = document.querySelectorAll('.shape')
+  const x = event.clientX * scaleFactor
+  const y = event.clientY * scaleFactor
+  console.log(x, y)
+
+for(let i = 0; i < shapes.length; ++i) {
+  const isOdd = i % 2 !== 0
+  const boolInt = isOdd ? -1 : 1
+  shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`
+  }
+}
 
 function contact(event) {
   event.preventDefault();
