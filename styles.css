@@ -170,7 +170,7 @@ nav {
   align-items: center;
   margin-top: 24px;
   padding: 32px;
-  width: 300px;
+  width: 150px;
 }
 .personal-logo__img {
   height: 100px;
@@ -181,7 +181,7 @@ nav {
 }
 
 .logo__text {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .nav__link--list {
@@ -804,5 +804,9 @@ SHAPES
   .logo__wrapper {
     width: 125px;
     margin: -40px -50px;
+  }
+  
+  .shape {
+    display: none;
   }
 }
