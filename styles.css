@@ -612,6 +612,10 @@ PROJECTS
 
 }
 
+.project__link {
+  z-index: 3;
+}
+
 
 /* 
 
