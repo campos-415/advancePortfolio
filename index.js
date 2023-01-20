@@ -15,6 +15,8 @@ function toggleContrast() {
 }
 
 
+// function 
+
 function toggleModal() {
   if (isModalOpen) {
     isModalOpen = false
