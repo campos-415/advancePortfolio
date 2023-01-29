@@ -58,11 +58,11 @@ function contact(event) {
     loading.classList.remove('modal__overlay--visible')
     success.classList += " modal__overlay--visible"
   }).catch(() => {
-     loading.classList.remove('modal__overlay--visible')
-     alert (
-      'Email service is down :(  Please contact me directly at camposss.415@gmail.com'
-     )
-  })
+    loading.classList.remove('modal__overlay--visible')
+    alert (
+     'Email service is down :(  Please contact me directly at camposss.415@gmail.com'
+    )
+ })
   // comment out code below when  production
   // product page is done!!  VERY IMPORTANT
   // setTimeout(() => {
