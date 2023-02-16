@@ -4,6 +4,8 @@
 const scaleFactor = 1 / 20
 let isModalOpen = false
 let contrastToggle = false 
+
+
 function toggleContrast() {
   contrastToggle = !contrastToggle
   if (contrastToggle) {
@@ -13,9 +15,6 @@ function toggleContrast() {
     document.body.classList.remove('dark-theme')
   }
 }
-
-
-// function 
 
 function toggleModal() {
   if (isModalOpen) {

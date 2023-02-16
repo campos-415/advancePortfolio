@@ -51,7 +51,7 @@ input:hover, textarea:hover {
 }
 
 input:focus, textarea:focus {
-  border-color: #f06449;
+  border-color: #219EBC;
 }
 
 section {
@@ -67,8 +67,8 @@ section {
   line-height: 1;
 }
 
-.orange {
-  color: #f06449;
+.blue {
+  color: #219EBC;
 }
 
 a {
@@ -170,7 +170,7 @@ nav {
   align-items: center;
   margin-top: 24px;
   padding: 32px;
-  width: 150px;
+  width: 130px;
 }
 .personal-logo__img {
   height: 100px;
@@ -209,13 +209,17 @@ DARK THEME
 
 */
 
-.dark-theme .title,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
+.dark-theme .title,
 .dark-theme .header__para {
   color: #fff;
+}
+
+.dark-theme .blue {
+  color: #219EBC;
 }
 
 .dark-theme section {
@@ -235,8 +239,7 @@ DARK THEME
   color: #242424;
 }
 
-.dark-theme .logo__text, 
-.dark-theme .personal-logo__img {
+.dark-theme .logo__text {
   filter: invert();
 }
 
@@ -252,6 +255,20 @@ LANDING PAGE
 #landing-page {
   min-height: 100vh;
 }  
+
+.title-img {
+  display: flex;
+  align-items: center;
+}
+
+.personal__img--wrapper {
+  width: 300px;
+}
+
+.personal__img {
+  width: 100%;
+  transform: scaleX(-1);
+}
 
 .header {
   position: absolute;
@@ -278,7 +295,7 @@ LANDING PAGE
 }  
 
 .social__link {
-  background-color: #f06449;
+  background-color: #219EBC;
   color: white;
   padding: 6px;
   width: 32px;
@@ -461,8 +478,8 @@ MODAL
 }
 
 .form__submit {
-  background-color: #f06449;
-  border: 2px solid #f06449;
+  background-color: #219EBC;
+  border: 2px solid #219EBC;
   color: white;
   font-weight: bold;
   max-width: 200px;
@@ -639,7 +656,6 @@ footer {
 
 .footer__personal-logo--img {
   width: 100%;
-  filter: invert();
 }
 
 .footer__logo--text {
