@@ -406,6 +406,7 @@ MODAL
 .modal__languages {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .modal__language {
@@ -633,7 +634,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8% 0;
+  padding: 8px 0;
 }
 
 .footer__personal-logo--img {
@@ -647,7 +648,7 @@ footer {
 }
 
 .footer__logo--wrapper {
-  width: 200px;
+  width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
