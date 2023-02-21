@@ -560,6 +560,7 @@ PROJECTS
 .project__img {
   width: 100%;
   transition: all 600ms ease;
+  
 }
 
 .project__wrapper {
@@ -568,6 +569,7 @@ PROJECTS
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
   overflow: hidden;
   margin-bottom: 48px;
+  transform: scale(1);
 }
 
 .project__wrapper:hover .project__description {
@@ -814,6 +816,11 @@ SHAPES
   .project__link {
     z-index: 10;
   }
+
+  .project_img { 
+    z-index: 9;
+  }
+  
 
   .project__description--sub-title {
     margin-bottom: 12px;
