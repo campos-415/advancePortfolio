@@ -910,10 +910,6 @@ SHAPES
     text-align: center;
   }
 
-  .project__link {
-    z-index: 10;
-  }
-
   .project__description--sub-title {
     margin-bottom: 12px;
   }
