@@ -654,6 +654,7 @@ footer {
   padding: 8px 0;
 }
 
+
 .footer__personal-logo--img {
   width: 100%;
 }
@@ -810,6 +811,10 @@ SHAPES
     text-align: center;
   }
 
+  .project__link {
+    z-index: 10;
+  }
+
   .project__description--sub-title {
     margin-bottom: 12px;
   }
@@ -829,5 +834,9 @@ SHAPES
   
   .shape {
     display: none;
+  }
+
+  .footer__logo--wrapper {
+    width: 100px;
   }
 }
