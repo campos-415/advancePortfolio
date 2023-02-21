@@ -160,7 +160,7 @@ nav {
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  /* margin: 12px auto; */
+  margin: 0 auto;
   height: 100px;
   padding: 0 20px;
 }
@@ -172,11 +172,14 @@ nav {
   padding: 32px;
   width: 130px;
 }
+
+
 .personal-logo__img {
   height: 100px;
   margin-top: 12px;
   object-fit: contain;
   width: 100%;
+  margin-right: 24px;
   /* height: 200px; */
 }
 
@@ -265,10 +268,7 @@ LANDING PAGE
   width: 300px;
 }
 
-.personal__img {
-  width: 100%;
-  transform: scaleX(-1);
-}
+
 
 .header {
   position: absolute;
@@ -549,7 +549,7 @@ MODAL
 PROJECTS
 
 */
-/* 
+ 
 
 .section__title {
   text-align: center;
@@ -557,6 +557,7 @@ PROJECTS
   margin-bottom: 60px;
 }
 
+/*
 .project__img {
   width: 100%;
   transition: all 600ms ease;
@@ -640,6 +641,7 @@ PROJECTS
 .project__img {
   width: 100%;
   transition: all 500ms ease;
+  transform: scale(1.01);
 }
 
 .project__wrapper {
@@ -648,6 +650,7 @@ PROJECTS
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 48px;
 }
 
 .project__wrapper::before {
@@ -700,17 +703,27 @@ PROJECTS
 }
 
 .project__description--title {
-  font-size: 40px;
+  font-size: 48px;
+}
+
+.project__description--sub-title {
+  margin-top: 16px;
+  font-size: 24px;
+}
+
+
+.project__description--link {
+  color: white;
+  font-size: 32px;
+  margin-right: 20px;
 }
 
 .project__description--para {
   margin: 16px 0;
+  font-size: 20px;
+
 }
 
-.project__description--link {
-  font-size: 20px;
-  margin-right: 16px;
-}
 
 .project__description--title,
 .project__description--sub-title,
@@ -900,11 +913,6 @@ SHAPES
   .project__link {
     z-index: 10;
   }
-
-  .project_img { 
-    z-index: 9;
-  }
-  
 
   .project__description--sub-title {
     margin-bottom: 12px;
